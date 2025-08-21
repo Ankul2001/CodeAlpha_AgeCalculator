@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator by Ankul</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header" data-aos="fade-down">
+            <div class="logo">
+                <i class="fas fa-calculator"></i>
+                <h1>Age Calculator</h1>
+            </div>
+            <!-- <p class="subtitle">Calculate your age with precision and style</p> -->
+        </header>
+
+        <!-- Main Calculator Section -->
+        <main class="main-content">
+            <!-- Input Section -->
+            <section class="input-section" data-aos="fade-up" data-aos-delay="200">
+                <div class="calculator-card">
+                    <h2><i class="fas fa-birthday-cake"></i> Enter Your Birth Date</h2>
+                    
+                    <div class="input-group">
+                        <label for="birthDate">
+                            <i class="fas fa-calendar-alt"></i>
+                            Birth Date
+                        </label>
+                        <input type="date" id="birthDate" class="date-input">
+                    </div>
+
+                    <button id="calculateBtn" class="calculate-btn">
+                        <i class="fas fa-calculator"></i>
+                        Calculate Age
+                    </button>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" data-aos="fade-up" data-aos-delay="400">
+                <div class="results-card" id="resultsCard" style="display: none;">
+                    <h3><i class="fas fa-chart-line"></i> Your Age Analysis</h3>
+                    
+                    <div class="age-display">
+                        <div class="age-number" id="ageNumber">0</div>
+                        <div class="age-label">Years Old</div>
+                    </div>
+
+                    <div class="detailed-results">
+                        <div class="result-item" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="result-icon">
+                                <i class="fas fa-calendar-day"></i>
+                            </div>
+                            <div class="result-content">
+                                <h4>Years</h4>
+                                <span id="years">0</span>
+                            </div>
+                        </div>
+
+                        <div class="result-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="result-icon">
+                                <i class="fas fa-calendar-week"></i>
+                            </div>
+                            <div class="result-content">
+                                <h4>Months</h4>
+                                <span id="months">0</span>
+                            </div>
+                        </div>
+
+                        <div class="result-item" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="result-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="result-content">
+                                <h4>Days</h4>
+                                <span id="days">0</span>
+                            </div>
+                        </div>
+
+                        <div class="result-item" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="result-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="result-content">
+                                <h4>Hours</h4>
+                                <span id="hours">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fun-facts" data-aos="fade-up" data-aos-delay="500">
+                        <h4><i class="fas fa-lightbulb"></i> Fun Facts</h4>
+                        <div class="facts-grid">
+                            <div class="fact-item">
+                                <span class="fact-number" id="heartbeats">0</span>
+                                <span class="fact-label">Heartbeats</span>
+                            </div>
+                            <div class="fact-item">
+                                <span class="fact-number" id="breaths">0</span>
+                                <span class="fact-label">Breaths</span>
+                            </div>
+                            <div class="fact-item">
+                                <span class="fact-number" id="steps">0</span>
+                                <span class="fact-label">Steps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section" data-aos="fade-up" data-aos-delay="600">
+                <h3><i class="fas fa-star"></i> Why Choose Our Age Calculator?</h3>
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Lightning Fast</h4>
+                        <p>Instant calculations with real-time updates</p>
+                    </div>
+
+                    <div class="feature-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h4>Detailed Analysis</h4>
+                        <p>Get years, months, days, and even hours</p>
+                    </div>
+
+                    <div class="feature-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Mobile Friendly</h4>
+                        <p>Works perfectly on all devices</p>
+                    </div>
+
+                    <div class="feature-card" data-aos="flip-left" data-aos-delay="400">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4>Modern Design</h4>
+                        <p>Beautiful UI with smooth animations</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer" data-aos="fade-up">
+            <p>Made with <i class="fas fa-heart"></i> for you!</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
